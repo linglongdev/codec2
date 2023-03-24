@@ -1,0 +1,24 @@
+package:
+  id: codec2
+  name: codec2
+  version: 0.8.1
+  kind: lib
+  description: |
+    codec2.
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/codec2.git
+  version: master
+  commit: 1bc30d25e9cec106d82db95c72acd410b2eca558
+  patch:
+  - Move-allocation-pointers-to-ofdm-struct
+  - fsk_fft_api
+  - modern-cmake-targets
+  - debian-source-package
+build:
+  kind: cmake
